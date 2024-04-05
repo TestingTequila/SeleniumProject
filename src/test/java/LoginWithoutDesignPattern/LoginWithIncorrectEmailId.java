@@ -1,13 +1,11 @@
-package LoginWithDesignPattern;
+package LoginWithoutDesignPattern;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class LoginWithCorrectCredentials {
+public class LoginWithIncorrectEmailId {
 
     public static void main(String[] args) throws InterruptedException {
         //1. Open the browser
@@ -23,7 +21,7 @@ public class LoginWithCorrectCredentials {
         loginLink.click();
         //5. Enter correct email
         WebElement emailTextBox = driver.findElement(By.xpath("//input[@id='input-email']"));
-        emailTextBox.sendKeys("zubair.ansari@janbask.com");
+        emailTextBox.sendKeys("ben.fletcher123@janbask.com");
         //6. Enter correct password
         WebElement passwordTextBox = driver.findElement(By.xpath("//input[@id='input-password']"));
         passwordTextBox.sendKeys("test@1234");

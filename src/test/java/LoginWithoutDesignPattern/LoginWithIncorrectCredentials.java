@@ -1,15 +1,15 @@
-package LoginWithDesignPattern;
+package LoginWithoutDesignPattern;
 
+import day31.POM.CommonActions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 
-public class LoginWithIncorrectEmailId {
+public class LoginWithIncorrectCredentials {
 
     public static void main(String[] args) throws InterruptedException {
         //1. Open the browser
-        WebDriver driver = new ChromeDriver();
+        WebDriver driver = CommonActions.launchBrowser("Edge");
         //2. Enter the application url
         driver.get("https://janbaskdemo.com/");
         //3. Click on My Account Icon
@@ -19,12 +19,12 @@ public class LoginWithIncorrectEmailId {
         //4. Click on Login Link
         WebElement loginLink = driver.findElement(By.xpath("//a[text()='Login']"));
         loginLink.click();
-        //5. Enter correct email
+        //5. Enter incorrect email
         WebElement emailTextBox = driver.findElement(By.xpath("//input[@id='input-email']"));
         emailTextBox.sendKeys("ben.fletcher123@janbask.com");
         //6. Enter correct password
         WebElement passwordTextBox = driver.findElement(By.xpath("//input[@id='input-password']"));
-        passwordTextBox.sendKeys("test@1234");
+        passwordTextBox.sendKeys("test@123455");
         //7. Click on Login button
         WebElement loginButton=driver.findElement(By.xpath("//input[@type='submit']"));
         loginButton.click();
@@ -39,7 +39,7 @@ public class LoginWithIncorrectEmailId {
             System.out.println("Login Failed...Please check your credentials");
         }
         //9. Close the Browser
-        driver.close();
+        CommonActions.closeBrowser();
 
     }
 
