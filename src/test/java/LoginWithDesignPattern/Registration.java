@@ -1,3 +1,5 @@
+package LoginWithDesignPattern;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -19,7 +21,7 @@ public class Registration
         //4. Click on Register Link
         WebElement registerLink=driver.findElement(By.xpath("//a[contains(text(),'Register')]"));
         registerLink.click();
-        //5. Fill the Registration form
+        //5. Fill the LoginWithDesignPattern.Registration form
         WebElement firstNameTextBox= driver.findElement(By.id("input-firstname"));
         firstNameTextBox.sendKeys("Zubair");
         WebElement lastNameTextBox=driver.findElement(By.name("lastname"));
@@ -46,12 +48,12 @@ public class Registration
         //7. Click on Continue button
         WebElement continueButton= driver.findElement(By.id("submitbtn"));
         continueButton.click();
-        //8. Validate Registration status
+        //8. Validate LoginWithDesignPattern.Registration status
         String registerPageTitle=driver.getTitle();
         System.out.println("Current Page Title: " + registerPageTitle);
         if(!Objects.equals(registerPageTitle, "Register Account"))
         {
-            System.out.println("Registration is Successful");
+            System.out.println("LoginWithDesignPattern.Registration is Successful");
         }
         else
         {
