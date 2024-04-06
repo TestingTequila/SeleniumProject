@@ -8,9 +8,9 @@ public class Login {
     public static void main(String[] args) throws InterruptedException {
 
         //1. Open the browser
-        WebDriver driver = CommonActions.launchBrowser("Chrome");
+        WebDriver driver = CommonActions.launchBrowser(AppData.BROWSER_TYPE);
         //2. Enter the application url
-        driver.get("https://janbaskdemo.com/");
+        driver.get(AppData.APP_URL);
 
         //3. Click on My Account Icon
         YourStore ys = new YourStore(driver);
@@ -20,10 +20,10 @@ public class Login {
         AccountLogin al =ys.clickOnLoginLink();
 
         //5. Enter correct email
-        al.enteringEmailId("ben.fletcher@janbask.com");
+        al.enteringEmailId(AppData.USER_EMAIL_ID);
 
         //6. Enter correct password
-        al.enteringPassword("test@1234");
+        al.enteringPassword(AppData.USER_PASSWORD);
 
         //7. Click on Login button
         MyAccount ma =al.clickOnLoginButton();

@@ -1,4 +1,4 @@
-package day31.POM;
+package TestNGConcepts;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -33,7 +33,6 @@ public class CommonActions
         {
             System.out.println("This is an invalid browser Type....");
         }
-        driver.manage().window().maximize();
         return driver;
     }
 
