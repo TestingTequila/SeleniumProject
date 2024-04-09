@@ -1,3 +1,9 @@
+@BeforeSuite
+@BeforeTest
+@BeforeClass
+@BeforeMethod
+@Test
+
 1- Priority: To define the execution order of test cases.
              If the test cases have all, negative priority, No Priority(Default) and Positive priority, there order of
              execution will be Negative>Default>Positive

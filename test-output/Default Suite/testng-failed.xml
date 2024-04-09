@@ -5,12 +5,12 @@
     <classes>
       <class name="TestNGConcepts.Login">
         <methods>
-          <include name="loginWithInValidEmailId"/>
           <include name="closeBrowser"/>
+          <include name="loginWithInValidEmailId"/>
           <include name="loginWithInValidPassword"/>
           <include name="loginWithValidCredentials"/>
-          <include name="openBrowserAndEnterUrl"/>
           <include name="registration"/>
+          <include name="openBrowserAndEnterUrl"/>
           <include name="loginWithInValidCredentials"/>
         </methods>
       </class> <!-- TestNGConcepts.Login -->
