@@ -3,10 +3,7 @@ package TestNGConcepts;
 import day31.POM.MyAccount;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 public class Login {
 
@@ -120,6 +117,12 @@ public class Login {
     {
         System.out.println(" This registration is Successfully executed");
         Assert.fail();
+    }
+
+    @Test@Parameters({"fName", "lName"})
+    public  void registration2(String fName, String lName)
+    {
+        System.out.println(" This registration is :" + fName + "--" + lName);
     }
 
     @DataProvider
