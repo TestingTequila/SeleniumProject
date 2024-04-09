@@ -1,6 +1,7 @@
 package day31.POM;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 
 public class MyAccount
 {
@@ -13,10 +14,6 @@ public class MyAccount
     public  void validateLoginStatus()
     {
         String loginPageTitle = driver.getTitle();
-        if (loginPageTitle.equals("My Account")) {
-            System.out.println("Login is successful");
-        } else {
-            System.out.println("Login Failed...Please check your credentials");
-        }
+        Assert.assertEquals(loginPageTitle,"My Account" );
     }
 }

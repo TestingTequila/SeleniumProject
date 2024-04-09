@@ -1,0 +1,23 @@
+1- Priority: To define the execution order of test cases.
+             If the test cases have all, negative priority, No Priority(Default) and Positive priority, there order of
+             execution will be Negative>Default>Positive
+             In case No priority exists, TestNG will execute the test cases in Default alphabetical order
+
+   enabled: This attribute can be used in cases where we don't wish to execute certain test cases
+             enabled=false, will do so
+
+   timeOut: This will check if a particular test case is executed within mentioned time or not
+             timeOut = timeInMilliSeconds
+
+   dependsOnMethods: This will decide, if the depending method is passed only then dependent method will execute, else it would be skipped
+   dependsOnGroups:  This will decide, if the group of depending method is passed only then dependent method will execute, else it would be skipped
+
+   both Annotation & Attribute --> dataProvider:
+
+   ASSERTIONS:
+   -AssertEquals
+   -AssertNotEquals
+   -AssertTrue
+   -AssertFalse
+   -AssertFail
+   -Hard Assertion Vs Soft Assertion
