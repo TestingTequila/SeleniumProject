@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="SeleniumSuite" parallel="tests" thread-count="2">
+    <parameter name="fName" value="Jason"></parameter>
+    <parameter name="lName" value="Roger"></parameter>
     <test name="SeleniumTests" thread-count="2" parallel="methods">
-        <parameter name="fName" value="Jason"></parameter>
-        <parameter name="lName" value="Roger"></parameter>
+
         <classes>
             <class name="TestNGConcepts.Login">
                 <methods>

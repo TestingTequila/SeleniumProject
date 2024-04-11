@@ -24,6 +24,12 @@ public class TestNgBasics
         Assert.fail();
     }
 
+    @Test(priority=1)
+    public void registrationWithInvalidData()
+    {
+        System.out.println("@Test---This is my registrationWithInvalidData test case");
+    }
+
     @Test(priority = 3, enabled = false)
     public void addProductToCart()
     {
