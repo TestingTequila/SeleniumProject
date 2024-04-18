@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [SeleniumSuite]" guice-stage="DEVELOPMENT" verbose="0">
+  <parameter name="lName" value="Roger"/>
+  <parameter name="fName" value="Jason"/>
+  <test thread-count="2" parallel="tests" name="SeleniumTests(failed)" verbose="0">
+    <classes>
+      <class name="TestNGConcepts.Login">
+        <methods>
+          <include name="loginWithInValidEmailId"/>
+          <include name="closeBrowser"/>
+          <include name="loginWithInValidPassword"/>
+          <include name="loginWithValidCredentials" invocation-numbers="1"/>
+          <include name="openBrowserAndEnterUrl"/>
+          <include name="registration"/>
+          <include name="loginWithInValidCredentials"/>
+        </methods>
+      </class> <!-- TestNGConcepts.Login -->
+    </classes>
+  </test> <!-- SeleniumTests(failed) -->
+</suite> <!-- Failed suite [SeleniumSuite] -->

@@ -3,14 +3,14 @@
 <suite name="SeleniumSuite" parallel="tests" thread-count="2">
     <parameter name="fName" value="Jason"></parameter>
     <parameter name="lName" value="Roger"></parameter>
-    <test name="SeleniumTests" thread-count="2" parallel="methods">
-
+<!--    <test name="SeleniumTests" thread-count="2" parallel="methods">-->
+    <test name="SeleniumTests">
         <classes>
             <class name="TestNGConcepts.Login">
-                <methods>
-                    <include name="registration2">
-                    </include>
-                </methods>
+<!--                <methods>-->
+<!--                    <include name="registration2">-->
+<!--                    </include>-->
+<!--                </methods>-->
             </class>
         </classes>
     </test>

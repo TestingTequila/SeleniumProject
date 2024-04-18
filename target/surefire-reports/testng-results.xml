@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="3" failed="3" skipped="2">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-04-18T15:47:13 IST" name="SeleniumSuite" finished-at="2024-04-18T15:48:46 IST" duration-ms="92814">
+    <groups>
+    </groups>
+    <test started-at="2024-04-18T15:47:13 IST" name="SeleniumTests" finished-at="2024-04-18T15:48:46 IST" duration-ms="92814">
+      <class name="TestNGConcepts.Login">
+        <test-method is-config="true" signature="openBrowserAndEnterUrl()[pri:0, instance:TestNGConcepts.Login@30ee2816]" started-at="2024-04-18T15:47:13 IST" name="openBrowserAndEnterUrl" finished-at="2024-04-18T15:47:31 IST" duration-ms="17856" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowserAndEnterUrl -->
+        <test-method signature="registration()[pri:0, instance:TestNGConcepts.Login@30ee2816]" started-at="2024-04-18T15:47:31 IST" name="registration" finished-at="2024-04-18T15:47:31 IST" duration-ms="8" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.fail(Assert.java:116)
+at TestNGConcepts.Login.registration(Login.java:119)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registration -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestNGConcepts.Login@30ee2816]" started-at="2024-04-18T15:47:31 IST" name="closeBrowser" finished-at="2024-04-18T15:47:31 IST" duration-ms="174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openBrowserAndEnterUrl()[pri:0, instance:TestNGConcepts.Login@30ee2816]" started-at="2024-04-18T15:47:31 IST" name="openBrowserAndEnterUrl" finished-at="2024-04-18T15:47:35 IST" duration-ms="3776" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowserAndEnterUrl -->
+        <test-method signature="registration2(java.lang.String,java.lang.String)[pri:0, instance:TestNGConcepts.Login@30ee2816]" started-at="2024-04-18T15:47:35 IST" name="registration2" finished-at="2024-04-18T15:47:35 IST" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Jason]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Roger]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registration2 -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestNGConcepts.Login@30ee2816]" started-at="2024-04-18T15:47:35 IST" name="closeBrowser" finished-at="2024-04-18T15:47:35 IST" duration-ms="290" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openBrowserAndEnterUrl()[pri:0, instance:TestNGConcepts.Login@30ee2816]" started-at="2024-04-18T15:47:35 IST" name="openBrowserAndEnterUrl" finished-at="2024-04-18T15:47:51 IST" duration-ms="15730" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowserAndEnterUrl -->
+        <test-method signature="loginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:TestNGConcepts.Login@30ee2816]" started-at="2024-04-18T15:47:51 IST" name="loginWithValidCredentials" data-provider="getData" finished-at="2024-04-18T15:47:56 IST" duration-ms="4742" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ben.fletcher@janbask.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test@1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithValidCredentials -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestNGConcepts.Login@30ee2816]" started-at="2024-04-18T15:47:56 IST" name="closeBrowser" finished-at="2024-04-18T15:47:56 IST" duration-ms="270" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openBrowserAndEnterUrl()[pri:0, instance:TestNGConcepts.Login@30ee2816]" started-at="2024-04-18T15:47:56 IST" name="openBrowserAndEnterUrl" finished-at="2024-04-18T15:48:01 IST" duration-ms="4747" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowserAndEnterUrl -->
+        <test-method signature="loginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:TestNGConcepts.Login@30ee2816]" started-at="2024-04-18T15:48:01 IST" name="loginWithValidCredentials" data-provider="getData" finished-at="2024-04-18T15:48:11 IST" duration-ms="10014" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[zubair.ansari@janbask.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test@1234]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.internal.thread.ThreadTimeoutException">
+            <message>
+              <![CDATA[Method TestNGConcepts.Login.loginWithValidCredentials() didn't finish within the time-out 10000]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method TestNGConcepts.Login.loginWithValidCredentials() didn't finish within the time-out 10000
+at java.base@17.0.7/java.lang.Thread.sleep(Native Method)
+at app//TestNGConcepts.YourStore.clickOnMyAccountIcon(YourStore.java:25)
+at app//TestNGConcepts.Login.loginWithValidCredentials(Login.java:31)
+at java.base@17.0.7/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base@17.0.7/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base@17.0.7/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base@17.0.7/java.lang.reflect.Method.invoke(Method.java:568)
+at app//org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at app//org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
+at app//org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)
+at app//org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:11)
+at java.base@17.0.7/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.thread.ThreadTimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithValidCredentials -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestNGConcepts.Login@30ee2816]" started-at="2024-04-18T15:48:11 IST" name="closeBrowser" finished-at="2024-04-18T15:48:11 IST" duration-ms="139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openBrowserAndEnterUrl()[pri:0, instance:TestNGConcepts.Login@30ee2816]" started-at="2024-04-18T15:48:11 IST" name="openBrowserAndEnterUrl" finished-at="2024-04-18T15:48:23 IST" duration-ms="12250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowserAndEnterUrl -->
+        <test-method signature="loginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:TestNGConcepts.Login@30ee2816]" started-at="2024-04-18T15:48:23 IST" name="loginWithValidCredentials" data-provider="getData" finished-at="2024-04-18T15:48:28 IST" duration-ms="4829" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Kerrie.wright@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test@1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithValidCredentials -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestNGConcepts.Login@30ee2816]" started-at="2024-04-18T15:48:28 IST" name="closeBrowser" finished-at="2024-04-18T15:48:28 IST" duration-ms="397" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="loginWithInValidEmailId()[pri:2, instance:TestNGConcepts.Login@30ee2816]" started-at="2024-04-18T15:48:28 IST" name="loginWithInValidEmailId" finished-at="2024-04-18T15:48:28 IST" depends-on-methods="TestNGConcepts.Login.loginWithValidCredentials" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TestNGConcepts.Login.loginWithInValidEmailId() on instance TestNGConcepts.Login@30ee2816 depends on not successfully finished methods 
+[TestNGConcepts.Login.loginWithValidCredentials() on instance TestNGConcepts.Login@30ee2816]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TestNGConcepts.Login.loginWithInValidEmailId() on instance TestNGConcepts.Login@30ee2816 depends on not successfully finished methods 
+[TestNGConcepts.Login.loginWithValidCredentials() on instance TestNGConcepts.Login@30ee2816]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInValidEmailId -->
+        <test-method signature="loginWithInValidCredentials()[pri:3, instance:TestNGConcepts.Login@30ee2816]" started-at="2024-04-18T15:48:28 IST" name="loginWithInValidCredentials" finished-at="2024-04-18T15:48:28 IST" depends-on-methods="TestNGConcepts.Login.registration" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TestNGConcepts.Login.loginWithInValidCredentials() on instance TestNGConcepts.Login@30ee2816 depends on not successfully finished methods 
+[TestNGConcepts.Login.registration() on instance TestNGConcepts.Login@30ee2816]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TestNGConcepts.Login.loginWithInValidCredentials() on instance TestNGConcepts.Login@30ee2816 depends on not successfully finished methods 
+[TestNGConcepts.Login.registration() on instance TestNGConcepts.Login@30ee2816]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInValidCredentials -->
+        <test-method is-config="true" signature="openBrowserAndEnterUrl()[pri:0, instance:TestNGConcepts.Login@30ee2816]" started-at="2024-04-18T15:48:28 IST" name="openBrowserAndEnterUrl" finished-at="2024-04-18T15:48:41 IST" duration-ms="12596" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowserAndEnterUrl -->
+        <test-method signature="loginWithInValidPassword()[pri:3, instance:TestNGConcepts.Login@30ee2816]" started-at="2024-04-18T15:48:41 IST" name="loginWithInValidPassword" finished-at="2024-04-18T15:48:46 IST" duration-ms="4572" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [My Account] but found [Account Login]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [My Account] but found [Account Login]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at day31.POM.MyAccount.validateLoginStatus(MyAccount.java:17)
+at TestNGConcepts.Login.loginWithInValidPassword(Login.java:90)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInValidPassword -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestNGConcepts.Login@30ee2816]" started-at="2024-04-18T15:48:46 IST" name="closeBrowser" finished-at="2024-04-18T15:48:46 IST" duration-ms="267" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- TestNGConcepts.Login -->
+    </test> <!-- SeleniumTests -->
+  </suite> <!-- SeleniumSuite -->
+</testng-results>
