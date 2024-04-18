@@ -33,6 +33,7 @@ public class CommonActions
         {
             System.out.println("This is an invalid browser Type....");
         }
+        driver.manage().window().maximize();
         return driver;
     }
 
